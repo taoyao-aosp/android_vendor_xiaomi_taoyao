@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/seg_parameters.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/seg_parameters.json \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/seg_quantized.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/seg_quantized.dlc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/siq_ocl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache \
-    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/superiq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/taoyao_motiontuning.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/taoyao_motiontuning.xml \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
@@ -822,7 +821,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
-    consumerir.lahaina \
     displayfeature.default \
     fingerprint.goodix_fod.default \
     memtrack.default \
@@ -857,7 +855,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libI420colorconvert \
-    libMegviiFacepp-0.5.2 \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -968,7 +965,6 @@ PRODUCT_PACKAGES += \
     liblqe \
     libmctfengine_stub \
     libmdsprpc \
-    libmegface_xiaomi \
     libmi-stc-HW-modulate \
     libmiStereoFactoryRemapBasicLib \
     libmiXmlParser \
@@ -994,6 +990,7 @@ PRODUCT_PACKAGES += \
     libminziparchive \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
+    libmisight \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1014,7 +1011,6 @@ PRODUCT_PACKAGES += \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
-    libnotifyaudiohal \
     liboemcrypto \
     libofflinedump \
     libofflinelog \
@@ -1085,6 +1081,7 @@ PRODUCT_PACKAGES += \
     libspl \
     libssc \
     libssc_default_listener \
+    libssccalapi \
     libssd \
     libswregistrationalgo \
     libsynergy_loc_api \
@@ -1231,55 +1228,55 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor.xiaomi.hardware.dtool@1.0 \
-    bm2n06 \
-    bm2n08 \
-    bm2n13 \
-    bm2n14 \
-    bm2n15 \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    capi_v2_dap_cpdp \
-    hrtf5c \
-    libMIAIHDR_skel \
-    libQ6MSFR_manager_skel \
-    libQnnHtpAltPrepSkel \
-    libQnnHtpSkel \
-    libVppAisQnnHtp \
-    libVppQnnHtp \
-    libadsp_jpege_skel \
-    libapps_mem_heap \
-    libarcsoft_hdrplus_hvx_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcamera_nn_skel \
-    libcvpdsp_2_1 \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhdr_cdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_mfnr_cdsp_skel \
-    libmialgo_pureview_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmialgo_sfnr_cdsp_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsnpe_dsp_v65_domains_v2_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsnpe_dsp_v68_domains_v3_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    libsuper_res_networks \
-    libvpp_ais_networks \
-    libvpt_action_recognition \
-    misound_karaoke_res \
-    misound_karaokemix_res \
-    misound_res_headphone \
-    misound_res_spk \
+    vendor_lib_rfsa_adsp_bm2n06_bin \
+    vendor_lib_rfsa_adsp_bm2n08_bin \
+    vendor_lib_rfsa_adsp_bm2n13_bin \
+    vendor_lib_rfsa_adsp_bm2n14_bin \
+    vendor_lib_rfsa_adsp_bm2n15_bin \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so \
+    vendor_lib_rfsa_adsp_hrtf5c_bin \
+    vendor_lib_rfsa_adsp_libMIAIHDR_skel_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpAltPrepSkel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpSkel_so \
+    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
+    vendor_lib_rfsa_adsp_libVppQnnHtp_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_2_1_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mfnr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_pureview_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_sfnr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libsuper_res_networks_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
+    vendor_lib_rfsa_adsp_misound_karaoke_res_bin \
+    vendor_lib_rfsa_adsp_misound_karaokemix_res_bin \
+    vendor_lib_rfsa_adsp_misound_res_headphone_bin \
+    vendor_lib_rfsa_adsp_misound_res_spk_bin \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
     lib-imsvideocodec \
