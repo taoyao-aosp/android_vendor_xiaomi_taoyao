@@ -21809,6 +21809,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwa_opticalzoomfactor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_opticalzoomfactor.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwa_refocus",
     owner: "xiaomi",
     strip: {
