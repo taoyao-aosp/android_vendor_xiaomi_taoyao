@@ -1594,6 +1594,7 @@ PRODUCT_PACKAGES += \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
     libwa_depth \
+    libwa_opticalzoomfactor \
     libwa_refocus \
     libwa_widelens_undistort \
     libwapi_cert \
