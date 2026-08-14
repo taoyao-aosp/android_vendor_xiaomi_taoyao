@@ -1,0 +1,10 @@
+{
+	"Type":"Category",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Debug/mode_debug.json",
+			"Index":10
+		}
+	]
+}

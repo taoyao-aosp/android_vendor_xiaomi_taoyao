@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/taoyao
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/taoyao/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
-    vendor/xiaomi/taoyao/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
-    vendor/xiaomi/taoyao/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
-    vendor/xiaomi/taoyao/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/xiaomi/taoyao/proprietary/product/etc/device_features/taoyao.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/taoyao.xml \
     vendor/xiaomi/taoyao/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml \
     vendor/xiaomi/taoyao/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml \
@@ -139,10 +135,497 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/pureView_parameter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pureView_parameter.xml \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/reid_float.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/reid_float.dlc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/default_param.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/default_param.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/1720888_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/1720888_64.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/2821809890_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/2821809890_64.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/3711416411_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/3711416411_64.bin \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/64/s31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/64/t31bc24e5f6c4ef1752c77f3a22ad1ffcs0cc175b9c0f1b6a831c399e269772661t92eb5ffee6ae2fec3ad71c777531578fn92eb5ffee6ae2fec3ad71c777531578fn.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/64/t4cb05391f89c9250f65c8a6ee78b23cbs2dc5226508c09d4452255684c3c97035.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/64/t4cb05391f89c9250f65c8a6ee78b23cbs2dc5226508c09d4452255684c3c97035.bin \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/kernel/FaceRetouch64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/kernel/FaceRetouch64.bin \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/model/2722133617:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/model/2722133617 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/1068495261:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/1068495261 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/1202823203:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/1202823203 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/1587396406:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/1587396406 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/183601851:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/183601851 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/1846660881:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/1846660881 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/2135547585:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/2135547585 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/2199122872:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/2199122872 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/2532213662:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/2532213662 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/2611148883:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/2611148883 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/2644822710:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/2644822710 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/3171791906:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/3171791906 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/33333333:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/33333333 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/3533515369:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/3533515369 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/3626370065:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/3626370065 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/4183165925:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/4183165925 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/4224303816:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/4224303816 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/837151146:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/837151146 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/858912661:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/858912661 \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_CaptureFilter/configuration_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_CaptureFilter/configuration_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_CaptureFilter/configuration_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_CaptureFilter/configuration_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_CaptureFilter/res/classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_CaptureFilter/res/classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_CaptureFilter/res/native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_CaptureFilter/res/native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_PreviewFilter/configuration_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_PreviewFilter/configuration_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_PreviewFilter/configuration_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_PreviewFilter/configuration_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_PreviewFilter/res/classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_PreviewFilter/res/classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/10_PreviewFilter/res/native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/10_PreviewFilter/res/native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/15_Spotless/configuration.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/15_Spotless/configuration.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/15_Spotless/res/faceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/15_Spotless/res/faceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/16_SkinSmooth/configuration.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/16_SkinSmooth/configuration.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/16_SkinSmooth/configuration_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/16_SkinSmooth/configuration_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/16_SkinSmooth/res/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/16_SkinSmooth/res/FaceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/configuration_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/configuration_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/configuration_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/configuration_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/res/BrightEyes.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/res/BrightEyes.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/res/eye_pupil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/res/eye_pupil.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/res/left_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/res/left_eye.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/20_BrightEye/res/right_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/20_BrightEye/res/right_eye.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/25_FacialSmooth/configurationV2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/25_FacialSmooth/configurationV2.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/25_FacialSmooth/res/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/25_FacialSmooth/res/FaceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask_first.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask_first.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask_second.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/25_FacialSmooth/res/FacialSmoothMask_second.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/30_FaceStereo/configuration_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/30_FaceStereo/configuration_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/30_FaceStereo/configuration_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/30_FaceStereo/configuration_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/30_FaceStereo/res/FaceStereoShadow_classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/30_FaceStereo/res/FaceStereoShadow_classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/30_FaceStereo/res/FaceStereoShadow_native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/30_FaceStereo/res/FaceStereoShadow_native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/40_SkinEnhance/configuration.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/40_SkinEnhance/configuration.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/40_SkinEnhance/res/skin_detail.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/40_SkinEnhance/res/skin_detail.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_other_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_other_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_other_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/configuration_other_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/other_front.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/other_front.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/other_rear.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_CaptureSkinTone/res/other_rear.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_other_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/configuration_other_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/other_front.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/other_front.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/other_rear.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/50_PreviewSkinTone/res/other_rear.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/configuration.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/configuration.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/res/818_sh.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/res/818_sh.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/res/EyeShadow_3001_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/res/EyeShadow_3001_3.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/res/EyeShadow_3002_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/res/EyeShadow_3002_3.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/res/Eyebrow.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/res/Eyebrow.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_classical/res/zc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_classical/res/zc.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_native/configuration.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_native/configuration.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_native/res/Eyebrow.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_native/res/Eyebrow.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/60_Makeup_native/res/zc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/60_Makeup_native/res/zc.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/70_FacialRefine/configuration_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/70_FacialRefine/configuration_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/70_FacialRefine/configuration_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/70_FacialRefine/configuration_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/configuration_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/configuration_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/configuration_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/configuration_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/res/eye_refine.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/res/eye_refine.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/res/facelift_classical.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_classical/res/facelift_classical.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_native/configuration_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_native/configuration_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_native/configuration_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_native/configuration_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_native/res/eye_refine.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_native/res/eye_refine.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Configure/80_FacialRefineV2_native/res/facelift_native.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Configure/80_FacialRefineV2_native/res/facelift_native.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/10_ColorTone/Effects/0_ModeFront/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/10_ColorTone/Effects/0_ModeFront/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/10_ColorTone/Effects/0_ModeFront/filter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/10_ColorTone/Effects/0_ModeFront/filter.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/10_ColorTone/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/10_ColorTone/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/faceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/faceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmooth/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmooth/FaceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmooth/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmooth/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/BrightEyes.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/BrightEyes.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/eye_pupil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/eye_pupil.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/left_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/left_eye.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/right_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/right_eye.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FaceMask.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_first.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_first.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_second.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FacialSmoothMask_second.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/effectV2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/effectV2.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/1_ModeRear/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/1_ModeRear/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/1_ModeRear/filter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/1_ModeRear/filter.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/2_ModeIQ/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/2_ModeIQ/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/2_ModeIQ/filter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/2_ModeIQ/filter.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_IQ.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/mode_IQ.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/mode_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/818_sh.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/818_sh.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/EyeShadow_3001_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/EyeShadow_3001_3.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/EyeShadow_3002_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/EyeShadow_3002_3.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/nose.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/nose.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/effect_capture.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/effect_preview.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/eye_refine.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/eye_refine.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/facelift.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/1_ModeOtherFront/facelift.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/mode_other_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/mode_other_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/Debug/mode_debug.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/Debug/mode_debug.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_list.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_list.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_IQ.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_IQ.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_debug.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_debug.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_otherFront.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_otherFront.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_otherRear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_otherRear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/GlobalConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/GlobalConfig.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/InnerMaterial/mouth_close.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/InnerMaterial/mouth_close.png \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/InnerMaterial/mouth_open.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/InnerMaterial/mouth_open.png \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/BleachHairLut.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/BleachHairLut.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/ColorBurnLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/ColorBurnLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/ColorDodgeLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/ColorDodgeLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/DarkenLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/DarkenLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/HardLightLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/HardLightLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/LightenLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/LightenLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/LinearDodgeLutMap.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/LinearDodgeLutMap.png \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/LinearLightLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/LinearLightLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/MultiplyLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/MultiplyLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/OverlayLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/OverlayLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/PaintMask.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/PaintMask.png \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/ScreenLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/ScreenLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/SoftlightLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/SoftlightLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/TeethWhiteLut.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/TeethWhiteLut.png \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Overlay/VividlightLutMap.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Overlay/VividlightLutMap.jpg \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASE_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASE_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BRIGHT_EYE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DISPLACEMTMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DISPLACEMTMAP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_1024_32.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_1024_32.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_1024_32_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_1024_32_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_256_16.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_256_16.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_256_16_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_256_16_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_LITE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_LITE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_LITE_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_LITE_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_3D_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_GRAY_CURVE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_GRAY_CURVE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_GRAY_CURVE_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_GRAY_CURVE_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_RGB_CURVES.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_RGB_CURVES.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_RGB_CURVES_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_LUT_RGB_CURVES_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_SPOTLESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_SPOTLESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_WARP_MOUTH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_GLPROGRAM_WARP_MOUTH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASE_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASE_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BRIGHT_EYE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DISPLACEMTMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DISPLACEMTMAP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_EDGE_PROTECTION_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_M_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_CATMULLROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_CATMULLROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_1024_32.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_1024_32.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_1024_32_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_1024_32_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_256_16.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_256_16.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_256_16_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_256_16_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_LITE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_LITE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_LITE_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_LITE_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_3D_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_GRAY_CURVE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_GRAY_CURVE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_GRAY_CURVE_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_GRAY_CURVE_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_RGB_CURVES.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_RGB_CURVES.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_RGB_CURVES_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_LUT_RGB_CURVES_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_COLOR_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_NORMAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXCOLORLAYER_SPECIAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_COLOR_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_NORMAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL_WITH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_OVERLAY_MIXIMAGELAYER_SPECIAL_WITH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_SPOTLESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_SPOTLESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_WARP_MOUTH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_GLPROGRAM_WARP_MOUTH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Shaders/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_capture_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_capture_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_capture_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_capture_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_capture_other_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_capture_other_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_capture_other_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_capture_other_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_preview_classical.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_preview_classical.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_preview_native.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_preview_native.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_preview_other_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_preview_other_front.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/configuration_preview_other_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/configuration_preview_other_rear.json \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BRIGHT_EYE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_Define_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_WITH_MASK_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_LUT_3D_WITH_MASK_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MERGE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MORPH_ERODE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_MORPH_ERODE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_SPOTLESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_MOUTH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_GLPROGRAM_WARP_MOUTH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSSBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_1D_GAUSS_BILATERAL_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASE_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BASIC_TEXTURE_MAPPING_Define_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_COLORLAYER_WITHMASK_Define_NORMAL_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_MULTIPLY_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_NORMAL_Define_SOFT_LIGHT_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_MULTIPLY_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BLEND_IMAGELAYER_WITHMASK_Define_SOFT_LIGHT_MASK_R_EXT_FRAMEBUFFER_FETCH_BLEND_ALPHA.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BRIGHT_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BRIGHT_EYE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_BRIGHT_EYEV3_Define_USE_EYE_PUPIL.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_COLOR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_COLOR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACESURGERY_HEADNARROW_Define_SMOOTH_COORD_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_FUSE_OFFSETS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_NORMAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_BASE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_EYE_FUSE_OFFSET.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_DEF_M_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_LIQUID.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALREFINE_V2_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_BOX_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_NEW_VERSION_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_Define_USE_ROI_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_GAUSS_BLUR_WITH_FACEMASKV2.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FACIALSMOOTH_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_1D_MEANBLUR_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_CAPTURE_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_SHARPNESS_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_PROCESS_Define_USE_SKIN_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_FOGGY_FACERETOUCH_VARIANCE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_ROTATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_SCALE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LOCAL_WARP_TRANSLATE_Define_USE_EG_PRESERV_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_Define_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_Define_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_WITH_MASK_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_LUT_3D_WITH_MASK_Define_MASK_R_EXT_FRAMEBUFFER_FETCH.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MEDIAN_BLUR.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MERGE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MERGE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MORPH_ERODE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_MORPH_ERODE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_POINT.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SKIN_TONE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SKIN_TONE_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SPOTLESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_SPOTLESS.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_MOUTH_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_GLPROGRAM_WARP_MOUTH_MASK.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/resources/truesight_param.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_param.json \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/camera/scene_seg_20210802_2cls_384input_271212_snpe-1.58.0_3160_soc-sm7325_qat.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/scene_seg_20210802_2cls_384input_271212_snpe-1.58.0_3160_soc-sm7325_qat.dlc \
@@ -211,7 +694,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/taoyao/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
@@ -822,7 +1304,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
-    consumerir.lahaina \
     displayfeature.default \
     fingerprint.goodix_fod.default \
     memtrack.default \
@@ -994,6 +1475,7 @@ PRODUCT_PACKAGES += \
     libminziparchive \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
+    libmisight \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1014,7 +1496,6 @@ PRODUCT_PACKAGES += \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
-    libnotifyaudiohal \
     liboemcrypto \
     libofflinedump \
     libofflinelog \
@@ -1085,6 +1566,7 @@ PRODUCT_PACKAGES += \
     libspl \
     libssc \
     libssc_default_listener \
+    libssccalapi \
     libssd \
     libswregistrationalgo \
     libsynergy_loc_api \
@@ -1231,55 +1713,55 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor.xiaomi.hardware.dtool@1.0 \
-    bm2n06 \
-    bm2n08 \
-    bm2n13 \
-    bm2n14 \
-    bm2n15 \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    capi_v2_dap_cpdp \
-    hrtf5c \
-    libMIAIHDR_skel \
-    libQ6MSFR_manager_skel \
-    libQnnHtpAltPrepSkel \
-    libQnnHtpSkel \
-    libVppAisQnnHtp \
-    libVppQnnHtp \
-    libadsp_jpege_skel \
-    libapps_mem_heap \
-    libarcsoft_hdrplus_hvx_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcamera_nn_skel \
-    libcvpdsp_2_1 \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhdr_cdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_mfnr_cdsp_skel \
-    libmialgo_pureview_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmialgo_sfnr_cdsp_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsnpe_dsp_v65_domains_v2_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsnpe_dsp_v68_domains_v3_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    libsuper_res_networks \
-    libvpp_ais_networks \
-    libvpt_action_recognition \
-    misound_karaoke_res \
-    misound_karaokemix_res \
-    misound_res_headphone \
-    misound_res_spk \
+    vendor_lib_rfsa_adsp_bm2n06_bin \
+    vendor_lib_rfsa_adsp_bm2n08_bin \
+    vendor_lib_rfsa_adsp_bm2n13_bin \
+    vendor_lib_rfsa_adsp_bm2n14_bin \
+    vendor_lib_rfsa_adsp_bm2n15_bin \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so \
+    vendor_lib_rfsa_adsp_hrtf5c_bin \
+    vendor_lib_rfsa_adsp_libMIAIHDR_skel_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpAltPrepSkel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpSkel_so \
+    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
+    vendor_lib_rfsa_adsp_libVppQnnHtp_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_2_1_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mfnr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_pureview_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_sfnr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libsuper_res_networks_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
+    vendor_lib_rfsa_adsp_misound_karaoke_res_bin \
+    vendor_lib_rfsa_adsp_misound_karaokemix_res_bin \
+    vendor_lib_rfsa_adsp_misound_res_headphone_bin \
+    vendor_lib_rfsa_adsp_misound_res_spk_bin \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.wifidisplayhal@1.0 \
     lib-imsvideocodec \
@@ -1320,27 +1802,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.xiaomi.hardware.displayfeature@1.0 \
-    libdapparamstorage_v3_6 \
-    libdeccfg_v3_6 \
-    libdlbdsservice_v3_6 \
-    vendor.dolby_v3_6.hardware.dms360@2.0 \
-    libstagefright_soft_ddpdec \
-    libhwdap_v3_6 \
-    libswdap_v3_6 \
-    libcodec2_hidl@1.0_sp \
-    libcodec2_hidl_plugin_sp \
-    libcodec2_soft_ac4dec_sp \
-    libcodec2_soft_common_sp \
-    libcodec2_soft_ddpdec_sp \
-    libcodec2_store_dolby_sp \
-    libcodec2_vndk_sp \
-    libdapparamstorage_sp \
-    libdeccfg_sp \
-    libdlbdsservice_sp \
-    libui_sp \
-    vendor.dolby_sp.hardware.dmssp@2.0-impl \
-    vendor.dolby_sp.hardware.dmssp@2.0 \
-    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     CACertService \
     CneApp \
     IWlanService \
@@ -1367,7 +1828,6 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
-    c2_manifest_vendor.xml \
     fod.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
@@ -1378,8 +1838,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@2.0.xml \
     vendor.xiaomi.hardware.misys@3.0.xml \
     vendor.xiaomi.hardware.misys@4.0.xml \
-    manifest_dax_dolby_v3_6.xml \
-    vendor.dolby.hardware.dms.xml \
     adpl \
     adsprpcd \
     batterysecret \
@@ -1392,7 +1850,6 @@ PRODUCT_PACKAGES += \
     dspservice \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
-    android.hardware.dumpstate@1.1-service.xiaomi \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.keymaster@4.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
@@ -1453,10 +1910,7 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     dpmd \
-    wfdservice64 \
-    vendor.dolby_sp.hardware.dmssp@2.0-service \
-    vendor.dolby_sp.media.c2@1.0-service \
-    vendor.dolby_v3_6.hardware.dms360@2.0-service
+    wfdservice64
 
 PRODUCT_BOOT_JARS += \
     WfdCommon \

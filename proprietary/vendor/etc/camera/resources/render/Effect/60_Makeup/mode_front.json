@@ -1,0 +1,12 @@
+{
+	"##":"质感妆容",
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"Effects/0_ModeFront/effect.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

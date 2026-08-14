@@ -12903,35 +12903,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
-    allow_undefined_symbols: true,
-    check_elf_files: false,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "consumerir.lahaina",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/consumerir.lahaina.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -13405,7 +13376,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so",
             ],
             shared_libs: [
-                "citsensorservice_shim",
                 "libhidlbase",
                 "libhidltransport",
                 "libutils",
@@ -13427,6 +13397,8 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapper@4.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libdisplayconfig.qti",
+                "libmisight",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -18239,6 +18211,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmisight",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmisight.so",
+            ],
+            shared_libs: [
+                "libmisightjson_shim",
+                "libjsoncpp_shim",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libjsoncpp",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmlipay",
     owner: "xiaomi",
     strip: {
@@ -18895,39 +18897,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libnetmgr",
                 "libnetmgr_common",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnotifyaudiohal",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnotifyaudiohal.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "libxml2",
-                "android.hardware.audio@6.0",
-                "android.hardware.audio.common@6.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -21024,6 +20993,40 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libsdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libssccalapi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssccalapi.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libqmi_common_so",
+                "libqmi_cci",
+                "libqmi_encdec",
+                "libqmi_csi",
+                "libnanopb",
+                "libsns_api",
                 "libc++",
                 "libc",
                 "libm",
@@ -25445,7 +25448,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "bm2n06",
+    name: "vendor_lib_rfsa_adsp_bm2n06_bin",
     filename: "bm2n06.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n06.bin",
@@ -25454,7 +25457,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n08",
+    name: "vendor_lib_rfsa_adsp_bm2n08_bin",
     filename: "bm2n08.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n08.bin",
@@ -25463,7 +25466,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n13",
+    name: "vendor_lib_rfsa_adsp_bm2n13_bin",
     filename: "bm2n13.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n13.bin",
@@ -25472,7 +25475,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n14",
+    name: "vendor_lib_rfsa_adsp_bm2n14_bin",
     filename: "bm2n14.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n14.bin",
@@ -25481,7 +25484,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n15",
+    name: "vendor_lib_rfsa_adsp_bm2n15_bin",
     filename: "bm2n15.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n15.bin",
@@ -25490,7 +25493,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_v2_aptX_CLHDADV_Encoder",
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so",
     filename: "capi_v2_aptX_CLHDADV_Encoder.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so",
@@ -25499,7 +25502,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_v2_aptX_CLHDAD_Speech_Decoder",
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so",
     filename: "capi_v2_aptX_CLHDAD_Speech_Decoder.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so",
@@ -25508,7 +25511,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_v2_dap_cpdp",
+    name: "vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so",
     filename: "capi_v2_dap_cpdp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so",
@@ -25517,7 +25520,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "hrtf5c",
+    name: "vendor_lib_rfsa_adsp_hrtf5c_bin",
     filename: "hrtf5c.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/hrtf5c.bin",
@@ -25526,7 +25529,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libMIAIHDR_skel",
+    name: "vendor_lib_rfsa_adsp_libMIAIHDR_skel_so",
     filename: "libMIAIHDR_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libMIAIHDR_skel.so",
@@ -25535,7 +25538,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQ6MSFR_manager_skel",
+    name: "vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so",
     filename: "libQ6MSFR_manager_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so",
@@ -25544,7 +25547,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpAltPrepSkel",
+    name: "vendor_lib_rfsa_adsp_libQnnHtpAltPrepSkel_so",
     filename: "libQnnHtpAltPrepSkel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so",
@@ -25553,7 +25556,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpSkel",
+    name: "vendor_lib_rfsa_adsp_libQnnHtpSkel_so",
     filename: "libQnnHtpSkel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpSkel.so",
@@ -25562,7 +25565,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVppAisQnnHtp",
+    name: "vendor_lib_rfsa_adsp_libVppAisQnnHtp_so",
     filename: "libVppAisQnnHtp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libVppAisQnnHtp.so",
@@ -25571,7 +25574,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVppQnnHtp",
+    name: "vendor_lib_rfsa_adsp_libVppQnnHtp_so",
     filename: "libVppQnnHtp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libVppQnnHtp.so",
@@ -25580,7 +25583,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_jpege_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -25589,7 +25592,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapps_mem_heap",
+    name: "vendor_lib_rfsa_adsp_libapps_mem_heap_so",
     filename: "libapps_mem_heap.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so",
@@ -25598,7 +25601,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_hdrplus_hvx_skel",
+    name: "vendor_lib_rfsa_adsp_libarcsoft_hdrplus_hvx_skel_so",
     filename: "libarcsoft_hdrplus_hvx_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so",
@@ -25607,7 +25610,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_skel_so",
     filename: "libbitml_nsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -25616,7 +25619,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so",
     filename: "libbitml_nsp_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so",
@@ -25625,7 +25628,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcamera_nn_skel",
+    name: "vendor_lib_rfsa_adsp_libcamera_nn_skel_so",
     filename: "libcamera_nn_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so",
@@ -25634,7 +25637,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcvpdsp_2_1",
+    name: "vendor_lib_rfsa_adsp_libcvpdsp_2_1_so",
     filename: "libcvpdsp_2_1.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libcvpdsp_2_1.so",
@@ -25643,7 +25646,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdspCV_skel",
+    name: "vendor_lib_rfsa_adsp_libdspCV_skel_so",
     filename: "libdspCV_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
@@ -25652,7 +25655,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_binning",
+    name: "vendor_lib_rfsa_adsp_libdsp_streamer_binning_so",
     filename: "libdsp_streamer_binning.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so",
@@ -25661,7 +25664,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_so",
     filename: "libfastcvadsp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
@@ -25670,7 +25673,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libfastcvdsp_skel_so",
     filename: "libfastcvdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so",
@@ -25679,7 +25682,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so",
     filename: "libhdr_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_cdsp_skel.so",
@@ -25688,7 +25691,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_skel_so",
     filename: "libhdr_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so",
@@ -25697,7 +25700,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmctfengine_skel",
+    name: "vendor_lib_rfsa_adsp_libmctfengine_skel_so",
     filename: "libmctfengine_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so",
@@ -25706,7 +25709,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_basic_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so",
     filename: "libmialgo_basic_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so",
@@ -25715,7 +25718,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_mc_bokeh_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so",
     filename: "libmialgo_mc_bokeh_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so",
@@ -25724,7 +25727,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_mfnr_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_mfnr_cdsp_skel_so",
     filename: "libmialgo_mfnr_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_mfnr_cdsp_skel.so",
@@ -25733,7 +25736,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_pureview_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_pureview_cdsp_skel_so",
     filename: "libmialgo_pureview_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_pureview_cdsp_skel.so",
@@ -25742,7 +25745,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_rfs_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so",
     filename: "libmialgo_rfs_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so",
@@ -25751,7 +25754,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_sfnr_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_sfnr_cdsp_skel_so",
     filename: "libmialgo_sfnr_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_sfnr_cdsp_skel.so",
@@ -25760,7 +25763,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveObjectSegmentation_skel",
+    name: "vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so",
     filename: "libscveObjectSegmentation_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so",
@@ -25769,7 +25772,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveT2T_skel",
+    name: "vendor_lib_rfsa_adsp_libscveT2T_skel_so",
     filename: "libscveT2T_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
@@ -25778,7 +25781,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v65_domains_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libsnpe_dsp_v65_domains_v2_skel_so",
     filename: "libsnpe_dsp_v65_domains_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so",
@@ -25787,7 +25790,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v66_domains_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so",
     filename: "libsnpe_dsp_v66_domains_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so",
@@ -25796,7 +25799,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsnpe_dsp_v68_domains_v3_skel",
+    name: "vendor_lib_rfsa_adsp_libsnpe_dsp_v68_domains_v3_skel_so",
     filename: "libsnpe_dsp_v68_domains_v3_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so",
@@ -25805,7 +25808,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsns_device_mode_skel",
+    name: "vendor_lib_rfsa_adsp_libsns_device_mode_skel_so",
     filename: "libsns_device_mode_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so",
@@ -25814,7 +25817,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsns_low_lat_stream_skel",
+    name: "vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so",
     filename: "libsns_low_lat_stream_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so",
@@ -25823,7 +25826,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsuper_res_networks",
+    name: "vendor_lib_rfsa_adsp_libsuper_res_networks_so",
     filename: "libsuper_res_networks.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsuper_res_networks.so",
@@ -25832,7 +25835,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_ais_networks",
+    name: "vendor_lib_rfsa_adsp_libvpp_ais_networks_so",
     filename: "libvpp_ais_networks.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so",
@@ -25841,7 +25844,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpt_action_recognition",
+    name: "vendor_lib_rfsa_adsp_libvpt_action_recognition_so",
     filename: "libvpt_action_recognition.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so",
@@ -25850,7 +25853,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_karaoke_res",
+    name: "vendor_lib_rfsa_adsp_misound_karaoke_res_bin",
     filename: "misound_karaoke_res.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_karaoke_res.bin",
@@ -25859,7 +25862,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_karaokemix_res",
+    name: "vendor_lib_rfsa_adsp_misound_karaokemix_res_bin",
     filename: "misound_karaokemix_res.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin",
@@ -25868,7 +25871,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_res_headphone",
+    name: "vendor_lib_rfsa_adsp_misound_res_headphone_bin",
     filename: "misound_res_headphone.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin",
@@ -25877,7 +25880,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_res_spk",
+    name: "vendor_lib_rfsa_adsp_misound_res_spk_bin",
     filename: "misound_res_spk.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin",
@@ -27165,756 +27168,6 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libdapparamstorage_v3_6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libdapparamstorage_v3_6.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdapparamstorage_v3_6.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdeccfg_v3_6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libdeccfg_v3_6.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdeccfg_v3_6.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdlbdsservice_v3_6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libdlbdsservice_v3_6.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libstagefright_foundation-v33",
-                "liblog",
-                "libxml2",
-                "libdapparamstorage_v3_6",
-                "libsqlite",
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdlbdsservice_v3_6.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libstagefright_foundation-v33",
-                "liblog",
-                "libxml2",
-                "libdapparamstorage_v3_6",
-                "libsqlite",
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.dolby_v3_6.hardware.dms360@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_soft_ddpdec",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libstagefright_soft_ddpdec.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libdeccfg_v3_6",
-                "libstagefright_omx",
-                "libstagefright_softomx",
-                "libstagefright_foundation-v33",
-                "libutils",
-                "libcutils",
-                "libmedia_omx",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhwdap_v3_6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/soundfx/libhwdap_v3_6.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libaudioutils",
-                "libdapparamstorage_v3_6",
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "soundfx",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libswdap_v3_6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/soundfx/libswdap_v3_6.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libaudioutils",
-                "libdapparamstorage_v3_6",
-                "libhidlbase",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "soundfx",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.0_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_hidl@1.0_sp.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "dolbycodec_shim",
-                "libbase",
-                "libbase_shim",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui_sp",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_sp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    allow_undefined_symbols: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_hidl_plugin_sp.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libstagefright_foundation-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_ac4dec_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_soft_ac4dec_sp.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libdeccfg_sp",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libutils",
-                "libcodec2_store_dolby_sp",
-                "libcodec2_soft_common_sp",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_common_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_soft_common_sp.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_ddpdec_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_soft_ddpdec_sp.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libdeccfg_sp",
-                "libstagefright_foundation-v33",
-                "libcutils",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libutils",
-                "libcodec2_store_dolby_sp",
-                "libcodec2_soft_common_sp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_store_dolby_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_store_dolby_sp.so",
-            ],
-            shared_libs: [
-                "libdmabufheap",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vndk_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_vndk_sp.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libfmq",
-                "libgralloctypes",
-                "libhidlbase",
-                "libion",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
-                "libstagefright_bufferpool@2.0.1",
-                "libui_sp",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdapparamstorage_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdapparamstorage_sp.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdeccfg_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdeccfg_sp.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libdapparamstorage_sp",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdlbdsservice_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdlbdsservice_sp.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libstagefright_foundation-v33",
-                "liblog",
-                "libxml2",
-                "libcrypto",
-                "libdapparamstorage_sp",
-                "libsqlite",
-                "libhidlbase",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libui_sp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libui_sp.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator@2.0",
-                "android.hardware.graphics.allocator@3.0",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V7-ndk",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libgralloctypes",
-                "libhidlbase",
-                "libsync",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    check_elf_files: false,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.dolby_sp.hardware.dmssp@2.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libdapparamstorage_sp",
-                "libdlbdsservice_sp",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.dolby_sp.hardware.dmssp@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libdapparamstorage_v3_6",
-                "libdlbdsservice_v3_6",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
 android_app_import {
     name: "CACertService",
     owner: "xiaomi",
@@ -28178,15 +27431,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "c2_manifest_vendor.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "fod.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/fod.xml",
@@ -28274,24 +27518,6 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_dax_dolby_v3_6.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.dolby.hardware.dms.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -28677,39 +27903,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libwvhidl",
                 "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.dumpstate@1.1-service.xiaomi",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi",
-            ],
-            shared_libs: [
-                "android.hardware.dumpstate@1.1",
-                "android.hardware.dumpstate@1.0",
-                "libbase",
-                "libcutils",
-                "libdumpstateutil",
-                "libhidlbase",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -30612,106 +29805,6 @@ cc_prebuilt_binary {
     system_ext_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "vendor.dolby_sp.hardware.dmssp@2.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.dolby_sp.hardware.dmssp@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libdapparamstorage_sp",
-                "libdlbdsservice_sp",
-                "vendor.dolby_sp.hardware.dmssp@2.0",
-                "vendor.dolby_sp.hardware.dmssp@2.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.dolby_sp.media.c2@1.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "libcodec2_hidl@1.0_sp",
-                "libavservices_minijail",
-                "libhidlbase",
-                "libbinder",
-                "libcodec2_store_dolby_sp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.dolby_v3_6.hardware.dms360@2.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libdapparamstorage_v3_6",
-                "libdlbdsservice_v3_6",
-                "vendor.dolby_v3_6.hardware.dms360@2.0",
-                "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
 filegroup {
     name: "proprietary_rildb_config_sql_files",
     srcs: [
@@ -30738,10 +29831,4 @@ filegroup {
         "proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql",
         "proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql",
     ],
-}
-
-cc_library_shared {
-    name: "libssccalapi",
-    compile_multilib: "64",
-    soc_specific: true,
 }
